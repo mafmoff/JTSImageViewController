@@ -1664,7 +1664,8 @@ typedef struct {
     if (_flags.scrollViewIsAnimatingAZoom) {
         return;
     }
-    [self dismiss:YES];
+    // 拡大時シングルタップで画像が閉じないようにコメントアウト
+//    [self dismiss:YES];
 }
 
 - (void)imageLongPressed:(UILongPressGestureRecognizer *)sender {
